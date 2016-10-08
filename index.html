@@ -259,7 +259,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-08T17:13:46+08:00" content="2016-10-08">
+            <time itemprop="dateCreated" datetime="2016-10-08T18:13:13+08:00" content="2016-10-08">
               2016-10-08
             </time>
           </span>
@@ -353,26 +353,29 @@
 <p>初始设置完毕。然后拷贝mac端blog文件夹内的<code>_config.yml</code>,<code>themes</code>文件夹的内容到手机端blog文件夹内。</p>
 <h3 id="设置git同步"><a href="#设置git同步" class="headerlink" title="设置git同步"></a>设置git同步</h3><p>这里使用个人服务器(centos 6.5)作为远程git仓库。使用github的可以跳到第六步。</p>
 <ol>
-<li><p>安装git：</p>
+<li>安装git：</li>
+</ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># yum install git</div></pre></td></tr></table></figure>
-</li>
-<li><p>创建一个<code>git</code>账户，用来运行<code>git</code>服务。</p>
+<ol>
+<li>创建一个<code>git</code>账户，用来运行<code>git</code>服务。</li>
+</ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># adduser git</div></pre></td></tr></table></figure>
-</li>
-<li><p>创建登录证书。<br>收集所有需要登录的用户的公钥，就是自己的id_rsa.pub文件，把所有公钥导入到/home/git/.ssh/authorized_keys文件里，一行一个。</p>
-</li>
-<li><p>初始化<code>git</code><br>先选定一个目录作为Git仓库，这里是<code>~/blog.git</code>，在<code>~/</code>目录下输入命令：</p>
+<ol>
+<li>创建登录证书。<br>收集所有需要登录的用户的公钥，就是自己的id_rsa.pub文件，把所有公钥导入到/home/git/.ssh/authorized_keys文件里，一行一个。</li>
+<li>初始化<code>git</code><br>先选定一个目录作为Git仓库，这里是<code>~/blog.git</code>，在<code>~/</code>目录下输入命令：</li>
+</ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># git init --bare blog.git</div><div class="line"># chown -R git:git blog.git</div></pre></td></tr></table></figure>
-</li>
+<ol>
 <li><p>禁用shell登录。<br>编辑<code>/etc/passwd</code>文件。修改<code>git</code>账户的<code>/bin/bash</code>为<code>/usr/bin/git-shell</code>。</p>
 </li>
 <li><p>链接mac端source文件夹致远程仓库。<br>进入<code>blog/source</code>文件夹。运行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git init</div><div class="line">$ git remote add origin git@github.com:yourusername/blog.git</div><div class="line">$ git add .</div><div class="line">$ git commit -m &quot;initialize hexo folder as a local repo&quot;  # customize your own message</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
-</li>
-<li><p>在手机端<code>clone</code> <code>source</code>文件夹。<br>进入<code>~/blog</code>，运行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone git@github.com:yourusername/blog.git source</div></pre></td></tr></table></figure>
 </li>
 </ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git init</div><div class="line">$ git remote add origin git@github.com:yourusername/blog.git</div><div class="line">$ git add .</div><div class="line">$ git commit -m &quot;initialize hexo folder as a local repo&quot;  # customize your own message</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
+<ol>
+<li>在手机端<code>clone</code> <code>source</code>文件夹。<br>进入<code>~/blog</code>，运行：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone git@github.com:yourusername/blog.git source</div></pre></td></tr></table></figure>
 <p>至此，同步设置完成。这里每次修改前要<code>pull</code>source文件夹内容。然后完成后再<code>push</code>。</p>
 <blockquote>
 <p>由于只同步了<code>source</code>文件夹，所以对于设置文件的更改需要两边同时修改比较麻烦。个人尝试同步整个blog文件夹。出现嵌套的git仓库无法同步问题。也就是themes文件夹为空。解决方法：<strong>删除themes文件夹以及子文件夹中的.git即可。</strong>然后按照上面方式即可同步。且不需要在手机端中运行<code>hexo init</code>。</p>
