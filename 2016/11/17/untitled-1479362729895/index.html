@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="执念," />
 
 
 
@@ -84,15 +84,24 @@
 
 
 
-<meta name="description" content="Thinking different!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="夹爆我">
-<meta property="og:url" content="http://playgood111.com/index.html">
+<meta name="description" content="记录了将自己的数据转换为tfrecord类型数据并通过TF-slim提供网络简单训练的过程。
+
+TF-slim是google最新开放的基于tensorflow的高层库。包含了跟多的新特性，旨在用更少代码来构建更强大的神经网络。并提供了google自己的inceptionV3网络、residual网络以及最新的inception_resnet网络。这里简单记录了利用TF-slim在自己的数据集上使">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TF-slim训练自己的数据">
+<meta property="og:url" content="http://playgood111.com/2016/11/17/untitled-1479362729895/index.html">
 <meta property="og:site_name" content="夹爆我">
-<meta property="og:description" content="Thinking different!">
+<meta property="og:description" content="记录了将自己的数据转换为tfrecord类型数据并通过TF-slim提供网络简单训练的过程。
+
+TF-slim是google最新开放的基于tensorflow的高层库。包含了跟多的新特性，旨在用更少代码来构建更强大的神经网络。并提供了google自己的inceptionV3网络、residual网络以及最新的inception_resnet网络。这里简单记录了利用TF-slim在自己的数据集上使">
+<meta property="og:image" content="http://playgood111.com/images/1479365968472.png">
+<meta property="og:updated_time" content="2016-11-17T07:46:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="夹爆我">
-<meta name="twitter:description" content="Thinking different!">
+<meta name="twitter:title" content="TF-slim训练自己的数据">
+<meta name="twitter:description" content="记录了将自己的数据转换为tfrecord类型数据并通过TF-slim提供网络简单训练的过程。
+
+TF-slim是google最新开放的基于tensorflow的高层库。包含了跟多的新特性，旨在用更少代码来构建更强大的神经网络。并提供了google自己的inceptionV3网络、residual网络以及最新的inception_resnet网络。这里简单记录了利用TF-slim在自己的数据集上使">
+<meta name="twitter:image" content="http://playgood111.com/images/1479365968472.png">
 
 
 
@@ -120,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://playgood111.com/"/>
+  <link rel="canonical" href="http://playgood111.com/2016/11/17/untitled-1479362729895/"/>
 
 
 
 
 
-  <title> 夹爆我 </title>
+  <title> TF-slim训练自己的数据 | 夹爆我 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -157,9 +166,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -238,9 +245,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -273,10 +280,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/11/17/untitled-1479362729895/" itemprop="url">
-                  TF-slim训练自己的数据
-                </a>
+                TF-slim训练自己的数据
               
             
           </h1>
@@ -319,6 +323,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -333,9 +342,7 @@
       
 
       
-        
-          
-            <blockquote>
+        <blockquote>
 <p>记录了将自己的数据转换为tfrecord类型数据并通过TF-slim提供网络简单训练的过程。</p>
 </blockquote>
 <p><a href="https://github.com/tensorflow/models/tree/master/slim" target="_blank" rel="external">TF-slim</a>是google最新开放的基于tensorflow的高层库。包含了跟多的<a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim" target="_blank" rel="external">新特性</a>，旨在用更少代码来构建更强大的神经网络。并提供了google自己的inceptionV3网络、residual网络以及最新的<a href="https://arxiv.org/abs/1602.07261" target="_blank" rel="external">inception_resnet</a>网络。这里简单记录了利用TF-slim在自己的数据集上使用inception_resnet-v2网络的过程。</p>
@@ -356,354 +363,101 @@
 <p><code>get_train_data</code>即为上面的读取数据代码。同理测试数据时候也要更改这些代码。这里就不一一展示了。详细请阅读<a href="https://github.com/tensorflow/models/tree/master/slim" target="_blank" rel="external">源代码</a>。</p>
 <p>如有错误，望不吝告知。</p>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+
+      
     </div>
 
     <div>
       
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://playgood111.com/2016/10/08/untitled-1475909971647/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Playgood111">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="夹爆我">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="夹爆我" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/08/untitled-1475909971647/" itemprop="url">
-                  hexo+github pages博客建立以及同步到手机
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2016/10/08/untitled-1475909971647/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/08/untitled-1475909971647/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/10/08/untitled-1475909971647/" class="leancloud_visitors" data-flag-title="hexo+github pages博客建立以及同步到手机">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-
-          
-
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/shang.png" alt="Playgood111 WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
       
-      
-
-      
-        
-          
-            <blockquote>
-<p>记录了从零搭建hexo+github pages，以及同步到手机端全过程。留作系统崩溃时参考。<br>使用macos以及android。</p>
-</blockquote>
-<h2 id="mac-环境"><a href="#mac-环境" class="headerlink" title="mac 环境"></a>mac 环境</h2><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><ul>
-<li><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></li>
-<li><a href="https://git-scm.com" target="_blank" rel="external">Git</a></li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
-<p>运行上面命令完成hexo安装。具体参考<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">hexo中文文档</a>。</p>
-<p>安装完上面程序后在想要创建blog的文件夹内运行如下命令。</p>
-<blockquote>
-<p>例如本文放在 ~/Documents/blog 内。直接在<code>终端</code>输入<code>cd ~/Documents/blog</code> 然后运行如下命令。</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div></pre></td></tr></table></figure>
-<p>完成后运行<code>hexo s</code>运行服务端。然后浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 。即可看到建好的blog界面。</p>
-<h3 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a>github pages</h3><p>注册<a href="https://github.com/github" target="_blank" rel="external">github</a>账号，然后创建<a href="https://pages.github.com" target="_blank" rel="external">github pages</a>。Repository name 设置为yourname.github.io。完成后在hexo的配置文件处添加github pages信息。</p>
-<blockquote>
-<p>hexo 配置文件分为站点配置文件<code>~/Documents/blog/_config.yml</code>以及主题配置文件<code>~/Documents/blog/themes/_name/_config.yml</code>。<code>_name</code>为采用主题的名字。<br>在站点配置文件中修改<code>Deployment</code> 段为：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git </div><div class="line">  repo: https://github.com/yourname/yourname.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p>注意：<strong>配置文件中所有冒号后面必须有空格。</strong></p>
-<h3 id="hexo配置"><a href="#hexo配置" class="headerlink" title="hexo配置"></a>hexo配置</h3><p>首先更改hexo主题，个人采用大众情人<a href="http://theme-next.iissnan.com" target="_blank" rel="external">Next主题</a>。<br>在<code>~/Documents/blog/</code>目录下运行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure></p>
-<p>然后更改<code>~/Documents/blog/_config.yml</code>中设置 <code>theme: next</code>。</p>
-<p>完成后运行<code>hexo s</code>运行服务端。然后浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 。即可看到next主题。</p>
-<p>更多设置参考<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">Next主题安装</a>进行想要的效果。</p>
-<p>更改站点配置文件<code>~/Documents/blog/_config.yml</code>部分设置。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">title: 夹爆我	#博客名</div><div class="line">subtitle: 	#副标题</div><div class="line">description:  #用于搜索</div><div class="line">author: playgood111 #作者</div><div class="line">language: zh-Hans	#语言</div><div class="line">timezone: 	#时区</div></pre></td></tr></table></figure></p>
-<p>可到<a href="http://theme-next.iissnan.com/third-party-services.html" target="_blank" rel="external">Next第三方服务</a>中按需安装需要的功能。</p>
-<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><p>设置完成后即可推送到github pages。<br>终端运行如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ cd ~/Documents/blog</div><div class="line">$ hexo clean </div><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
-<p><code>hexo clean</code>命令用于清楚缓存。可用于删除文章后，标签页显示出错。<br><code>hexo g</code>用于生成静态页面。存放于<code>public</code>文件夹中。<br><code>hexo d</code>就是部署到github pages 。</p>
-<blockquote>
-<p>由于每次部署会删除更改github pages 内容为public中内容。所以域名设置CNAME文件和README.md文件也会消失。在<code>blog</code>文件夹中创建CNAME文件，内容为域名信息。这里为playgood111。还有README.md文件(可选)。内容为github pages描述。</p>
-</blockquote>
-<p>这样就可以在浏览器中输入域名访问blog了。</p>
-<h2 id="设置与手机端同步hexo"><a href="#设置与手机端同步hexo" class="headerlink" title="设置与手机端同步hexo"></a>设置与手机端同步hexo</h2><h3 id="手机环境设置"><a href="#手机环境设置" class="headerlink" title="手机环境设置"></a>手机环境设置</h3><p>手机端(android)安装<a href="https://termux.com" target="_blank" rel="external">termux</a>。<br>如无法翻墙。可以到apkpure等市场下载。<br>然后打开termux进入终端。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ apt-get update</div><div class="line">$ apt install git</div><div class="line">$ apt install nodejs</div><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
-<p>完成之后创建blog目录。这里为<code>~/blog</code>。<br>运行:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd blog </div><div class="line">$ hexo init</div></pre></td></tr></table></figure></p>
-<p>初始设置完毕。然后拷贝mac端blog文件夹内的<code>_config.yml</code>,<code>themes</code>文件夹的内容到手机端blog文件夹内。</p>
-<h3 id="设置git同步"><a href="#设置git同步" class="headerlink" title="设置git同步"></a>设置git同步</h3><p>这里使用个人服务器(centos 6.5)作为远程git仓库。使用github的可以跳到第六步。</p>
-<ol>
-<li>安装git：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># yum install git</div></pre></td></tr></table></figure>
-<ol>
-<li>创建一个<code>git</code>账户，用来运行<code>git</code>服务。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># adduser git</div></pre></td></tr></table></figure>
-<ol>
-<li>创建登录证书。<br>收集所有需要登录的用户的公钥，就是自己的id_rsa.pub文件，把所有公钥导入到/home/git/.ssh/authorized_keys文件里，一行一个。</li>
-<li>初始化<code>git</code><br>先选定一个目录作为Git仓库，这里是<code>~/blog.git</code>，在<code>~/</code>目录下输入命令：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># git init --bare blog.git</div><div class="line"># chown -R git:git blog.git</div></pre></td></tr></table></figure>
-<ol>
-<li><p>禁用shell登录。<br>编辑<code>/etc/passwd</code>文件。修改<code>git</code>账户的<code>/bin/bash</code>为<code>/usr/bin/git-shell</code>。</p>
-</li>
-<li><p>链接mac端source文件夹致远程仓库。<br>进入<code>blog/source</code>文件夹。运行：</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git init</div><div class="line">$ git remote add origin git@github.com:yourusername/blog.git</div><div class="line">$ git add .</div><div class="line">$ git commit -m &quot;initialize hexo folder as a local repo&quot;  # customize your own message</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
-<ol>
-<li>在手机端<code>clone</code> <code>source</code>文件夹。<br>进入<code>~/blog</code>，运行：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone git@github.com:yourusername/blog.git source</div></pre></td></tr></table></figure>
-<p>至此，同步设置完成。这里每次修改前要<code>pull</code>source文件夹内容。然后完成后再<code>push</code>。</p>
-<blockquote>
-<p>由于只同步了<code>source</code>文件夹，所以对于设置文件的更改需要两边同时修改比较麻烦。个人尝试同步整个blog文件夹。出现嵌套的git仓库无法同步问题。也就是themes文件夹为空。解决方法：<strong>删除themes文件夹以及子文件夹中的.git即可。</strong>然后按照上面方式即可同步。且不需要在手机端中运行<code>hexo init</code>。</p>
-</blockquote>
-<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>分享一个可视化文章管理插件<a href="https://github.com/nihgwu/hexo-hey" target="_blank" rel="external">hey</a>。mac端方便使用。手机端效果不太好。手机端推荐draft。如有问题欢迎指出~</p>
-
-          
-        
       
     </div>
+  </div>
 
-    <div>
-      
-    </div>
 
-    <div>
       
     </div>
 
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://playgood111.com/2016/10/07/hello-world/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Playgood111">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="夹爆我">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="夹爆我" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/07/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/执念/" rel="tag"># 执念</a>
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2016/10/07/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/07/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/10/07/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="First-Post"><a href="#First-Post" class="headerlink" title="First Post"></a>First Post</h2><p>Welcome to <a href="http://playgood111.com">playgood111</a>! This is my first post.<br>留个足迹，算是庆祝开通blog吧。</p>
-<h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><p><a href="https://github.com/playgood111" target="_blank" rel="external">playgood111</a></p>
-<p>欢迎来访<br>然而并没有什么干货。</p>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/08/untitled-1475909971647/" rel="next" title="hexo+github pages博客建立以及同步到手机">
+                <i class="fa fa-chevron-left"></i> hexo+github pages博客建立以及同步到手机
+              </a>
+            
+          </div>
 
-          
-        
-      
-    </div>
+          <span class="post-nav-divider"></span>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -711,6 +465,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/17/untitled-1479362729895/"
+           data-title="TF-slim训练自己的数据" data-url="http://playgood111.com/2016/11/17/untitled-1479362729895/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -730,8 +492,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -804,6 +575,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备数据"><span class="nav-number">2.</span> <span class="nav-text">准备数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#训练"><span class="nav-number">3.</span> <span class="nav-text">训练</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
@@ -907,6 +694,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
