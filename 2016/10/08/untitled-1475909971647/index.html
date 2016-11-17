@@ -110,7 +110,7 @@ Git
 安装完上面程序后在想要创建blog的文件夹内运行如下命令。
 
 例如本文放在 ~/Documents/b">
-<meta property="og:updated_time" content="2016-10-08T10:13:13.000Z">
+<meta property="og:updated_time" content="2016-11-17T08:23:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github pages博客建立以及同步到手机">
 <meta name="twitter:description" content="记录了从零搭建hexo+github pages，以及同步到手机端全过程。留作系统崩溃时参考。使用macos以及android。
@@ -391,40 +391,40 @@ Git
 <p>更多设置参考<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">Next主题安装</a>进行想要的效果。</p>
 <p>更改站点配置文件<code>~/Documents/blog/_config.yml</code>部分设置。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">title: 夹爆我	#博客名</div><div class="line">subtitle: 	#副标题</div><div class="line">description:  #用于搜索</div><div class="line">author: playgood111 #作者</div><div class="line">language: zh-Hans	#语言</div><div class="line">timezone: 	#时区</div></pre></td></tr></table></figure></p>
 <p>可到<a href="http://theme-next.iissnan.com/third-party-services.html" target="_blank" rel="external">Next第三方服务</a>中按需安装需要的功能。</p>
-<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><p>设置完成后即可推送到github pages。<br>终端运行如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ cd ~/Documents/blog</div><div class="line">$ hexo clean </div><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
+<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><p>设置完成后即可推送到github pages。<br>终端运行如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~/Documents/blog</div><div class="line">$ hexo clean </div><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
 <p><code>hexo clean</code>命令用于清楚缓存。可用于删除文章后，标签页显示出错。<br><code>hexo g</code>用于生成静态页面。存放于<code>public</code>文件夹中。<br><code>hexo d</code>就是部署到github pages 。</p>
 <blockquote>
 <p>由于每次部署会删除更改github pages 内容为public中内容。所以域名设置CNAME文件和README.md文件也会消失。在<code>blog</code>文件夹中创建CNAME文件，内容为域名信息。这里为playgood111。还有README.md文件(可选)。内容为github pages描述。</p>
 </blockquote>
 <p>这样就可以在浏览器中输入域名访问blog了。</p>
-<h2 id="设置与手机端同步hexo"><a href="#设置与手机端同步hexo" class="headerlink" title="设置与手机端同步hexo"></a>设置与手机端同步hexo</h2><h3 id="手机环境设置"><a href="#手机环境设置" class="headerlink" title="手机环境设置"></a>手机环境设置</h3><p>手机端(android)安装<a href="https://termux.com" target="_blank" rel="external">termux</a>。<br>如无法翻墙。可以到apkpure等市场下载。<br>然后打开termux进入终端。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ apt-get update</div><div class="line">$ apt install git</div><div class="line">$ apt install nodejs</div><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
+<h2 id="设置与手机端同步hexo"><a href="#设置与手机端同步hexo" class="headerlink" title="设置与手机端同步hexo"></a>设置与手机端同步hexo</h2><h3 id="手机环境设置"><a href="#手机环境设置" class="headerlink" title="手机环境设置"></a>手机环境设置</h3><p>手机端(android)安装<a href="https://termux.com" target="_blank" rel="external">termux</a>。<br>如无法翻墙。可以到apkpure等市场下载。<br>然后打开termux进入终端。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ apt-get update</div><div class="line">$ apt install git</div><div class="line">$ apt install nodejs</div><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
 <p>完成之后创建blog目录。这里为<code>~/blog</code>。<br>运行:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd blog </div><div class="line">$ hexo init</div></pre></td></tr></table></figure></p>
 <p>初始设置完毕。然后拷贝mac端blog文件夹内的<code>_config.yml</code>,<code>themes</code>文件夹的内容到手机端blog文件夹内。</p>
 <h3 id="设置git同步"><a href="#设置git同步" class="headerlink" title="设置git同步"></a>设置git同步</h3><p>这里使用个人服务器(centos 6.5)作为远程git仓库。使用github的可以跳到第六步。</p>
 <ol>
 <li>安装git：</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># yum install git</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># yum install git</span></div></pre></td></tr></table></figure>
 <ol>
 <li>创建一个<code>git</code>账户，用来运行<code>git</code>服务。</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># adduser git</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># adduser git</span></div></pre></td></tr></table></figure>
 <ol>
 <li>创建登录证书。<br>收集所有需要登录的用户的公钥，就是自己的id_rsa.pub文件，把所有公钥导入到/home/git/.ssh/authorized_keys文件里，一行一个。</li>
 <li>初始化<code>git</code><br>先选定一个目录作为Git仓库，这里是<code>~/blog.git</code>，在<code>~/</code>目录下输入命令：</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># git init --bare blog.git</div><div class="line"># chown -R git:git blog.git</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># git init --bare blog.git</span></div><div class="line"><span class="comment"># chown -R git:git blog.git</span></div></pre></td></tr></table></figure>
 <ol>
 <li><p>禁用shell登录。<br>编辑<code>/etc/passwd</code>文件。修改<code>git</code>账户的<code>/bin/bash</code>为<code>/usr/bin/git-shell</code>。</p>
 </li>
 <li><p>链接mac端source文件夹致远程仓库。<br>进入<code>blog/source</code>文件夹。运行：</p>
 </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git init</div><div class="line">$ git remote add origin git@github.com:yourusername/blog.git</div><div class="line">$ git add .</div><div class="line">$ git commit -m &quot;initialize hexo folder as a local repo&quot;  # customize your own message</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git init</div><div class="line">$ git remote add origin git@github.com:yourusername/blog.git</div><div class="line">$ git add .</div><div class="line">$ git commit -m <span class="string">"initialize hexo folder as a local repo"</span>  <span class="comment"># customize your own message</span></div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
 <ol>
 <li>在手机端<code>clone</code> <code>source</code>文件夹。<br>进入<code>~/blog</code>，运行：</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone git@github.com:yourusername/blog.git source</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:yourusername/blog.git <span class="built_in">source</span></div></pre></td></tr></table></figure>
 <p>至此，同步设置完成。这里每次修改前要<code>pull</code>source文件夹内容。然后完成后再<code>push</code>。</p>
 <blockquote>
 <p>由于只同步了<code>source</code>文件夹，所以对于设置文件的更改需要两边同时修改比较麻烦。个人尝试同步整个blog文件夹。出现嵌套的git仓库无法同步问题。也就是themes文件夹为空。解决方法：<strong>删除themes文件夹以及子文件夹中的.git即可。</strong>然后按照上面方式即可同步。且不需要在手机端中运行<code>hexo init</code>。</p>
