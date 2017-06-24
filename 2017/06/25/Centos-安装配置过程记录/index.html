@@ -85,18 +85,18 @@
 
 
 <meta name="description" content="重装centos6.5后搭建环境过程。
-驱动直接nvidia下载cuda toolkit安装，现已包含驱动。123456vim /etc/profile#在文件中加入如下内容export PATH=/usr/local/cuda-7.5/bin:$PATHexport LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH#关闭文件后">
+驱动直接nvidia下载cuda toolkit安装，现已包含驱动。123456vim /etc/profile#在文件中加入如下内容export PATH=/usr/local/cuda-8.0/bin:$PATHexport LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH#关闭文件后">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Centos 安装配置过程记录">
-<meta property="og:url" content="http://playgood111.com/2017/06/24/Centos-安装配置过程记录/index.html">
+<meta property="og:url" content="http://playgood111.com/2017/06/25/Centos-安装配置过程记录/index.html">
 <meta property="og:site_name" content="夹爆我">
 <meta property="og:description" content="重装centos6.5后搭建环境过程。
-驱动直接nvidia下载cuda toolkit安装，现已包含驱动。123456vim /etc/profile#在文件中加入如下内容export PATH=/usr/local/cuda-7.5/bin:$PATHexport LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH#关闭文件后">
-<meta property="og:updated_time" content="2017-06-24T12:42:48.000Z">
+驱动直接nvidia下载cuda toolkit安装，现已包含驱动。123456vim /etc/profile#在文件中加入如下内容export PATH=/usr/local/cuda-8.0/bin:$PATHexport LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH#关闭文件后">
+<meta property="og:updated_time" content="2017-06-24T18:33:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Centos 安装配置过程记录">
 <meta name="twitter:description" content="重装centos6.5后搭建环境过程。
-驱动直接nvidia下载cuda toolkit安装，现已包含驱动。123456vim /etc/profile#在文件中加入如下内容export PATH=/usr/local/cuda-7.5/bin:$PATHexport LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH#关闭文件后">
+驱动直接nvidia下载cuda toolkit安装，现已包含驱动。123456vim /etc/profile#在文件中加入如下内容export PATH=/usr/local/cuda-8.0/bin:$PATHexport LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH#关闭文件后">
 
 
 
@@ -124,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="http://playgood111.com/2017/06/24/Centos-安装配置过程记录/"/>
+  <link rel="canonical" href="http://playgood111.com/2017/06/25/Centos-安装配置过程记录/"/>
 
 
 
@@ -251,7 +251,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://playgood111.com/2017/06/24/Centos-安装配置过程记录/">
+  <link itemprop="mainEntityOfPage" href="http://playgood111.com/2017/06/25/Centos-安装配置过程记录/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Playgood111">
@@ -296,8 +296,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2017/06/24/Centos-安装配置过程记录/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/24/Centos-安装配置过程记录/" itemprop="commentCount"></span>
+                <a href="/2017/06/25/Centos-安装配置过程记录/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/25/Centos-安装配置过程记录/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -307,7 +307,7 @@
 
           
           
-             <span id="/2017/06/24/Centos-安装配置过程记录/" class="leancloud_visitors" data-flag-title="Centos 安装配置过程记录">
+             <span id="/2017/06/25/Centos-安装配置过程记录/" class="leancloud_visitors" data-flag-title="Centos 安装配置过程记录">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -339,12 +339,12 @@
       
         <hr>
 <p>重装centos6.5后搭建环境过程。</p>
-<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>直接<a href="https://developer.nvidia.com/cuda-downloads" target="_blank" rel="external">nvidia</a>下载cuda toolkit安装，现已包含驱动。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">vim /etc/profile</div><div class="line">#在文件中加入如下内容</div><div class="line">export PATH=/usr/local/cuda-7.5/bin:$PATH</div><div class="line">export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH</div><div class="line">#关闭文件后执行</div><div class="line">source /etc/profile</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vim /etc/ld.so.conf</div><div class="line">/usr/local/cuda-7.5/lib64  #加到文件中</div><div class="line">ldconfig</div></pre></td></tr></table></figure>
-<h3 id="修改yum源"><a href="#修改yum源" class="headerlink" title="修改yum源"></a>修改yum源</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">rpm -ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm</div><div class="line">rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm</div><div class="line">yum clean all</div><div class="line">yum update</div></pre></td></tr></table></figure>
+<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>直接<a href="https://developer.nvidia.com/cuda-downloads" target="_blank" rel="external">nvidia</a>下载cuda toolkit安装，现已包含驱动。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">vim /etc/profile</div><div class="line">#在文件中加入如下内容</div><div class="line">export PATH=/usr/local/cuda-8.0/bin:$PATH</div><div class="line">export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH</div><div class="line">#关闭文件后执行</div><div class="line">source /etc/profile</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vim /etc/ld.so.conf</div><div class="line">/usr/local/cuda-8.0/lib64  #加到文件中</div><div class="line">ldconfig</div></pre></td></tr></table></figure>
+<h3 id="修改yum源"><a href="#修改yum源" class="headerlink" title="修改yum源"></a>修改yum源</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</div><div class="line">wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo</div><div class="line">rpm -ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm</div><div class="line">rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm</div><div class="line">yum clean all</div><div class="line">yum makecache</div><div class="line">yum update</div></pre></td></tr></table></figure>
 <h3 id="升级GCC"><a href="#升级GCC" class="headerlink" title="升级GCC"></a>升级GCC</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo</div><div class="line">yum install devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++ devtoolset-2-gcc-gfortran cmake libcxx</div><div class="line">yum install centos-release-scl-rh centos-release-scl</div><div class="line">yum install devtoolset-4-gcc  devtoolset-4-gcc-c++</div><div class="line">scl <span class="built_in">enable</span> devtoolset-4 bash</div><div class="line"><span class="built_in">source</span> /opt/rh/devtoolset-4/<span class="built_in">enable</span></div></pre></td></tr></table></figure>
 <h3 id="deps"><a href="#deps" class="headerlink" title="deps"></a>deps</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">yum -y install gcc gcc-c++ make openssl-devel cmake  git gmp-devel \</div><div class="line">				libmicrohttpd-devel  libzip-devel mesa-libGL-devel libedit-devel \</div><div class="line">                libcurl-devel doxygen libtool</div></pre></td></tr></table></figure>
-<h3 id="cmake"><a href="#cmake" class="headerlink" title="cmake"></a>cmake</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">wget https://cmake.org/files/v3.8/cmake-3.8.2.tar.gz</div><div class="line">tar -xzvf cmake-3.8.2.tar.gz</div><div class="line"><span class="built_in">cd</span> cmake-3.8.2</div><div class="line">./bootstrap</div><div class="line">make</div><div class="line">make install</div></pre></td></tr></table></figure>
+<h3 id="cmake"><a href="#cmake" class="headerlink" title="cmake"></a>cmake</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">yum install libgnomeui-devel</div><div class="line">yum install gtk2 gtk2-devel gtk2-devel-docs</div><div class="line">wget https://cmake.org/files/v3.8/cmake-3.8.2.tar.gz</div><div class="line">tar -xzvf cmake-3.8.2.tar.gz</div><div class="line"><span class="built_in">cd</span> cmake-3.8.2</div><div class="line">./bootstrap</div><div class="line">make</div><div class="line">make install</div></pre></td></tr></table></figure>
 <h3 id="boost"><a href="#boost" class="headerlink" title="boost"></a>boost</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">wget http://downloads.sourceforge.net/project/boost/boost/1.63.0/boost_1_63_0.tar.gz</div><div class="line">tar -xzvf boost_1_63_0.tar.gz</div><div class="line"><span class="built_in">cd</span> boost_1_63_0</div><div class="line">./bootstrap.sh --with-libraries=all --with-toolset=gcc</div><div class="line">./b2 toolset=gcc</div><div class="line">./b2 install</div></pre></td></tr></table></figure>
 <h3 id="argtable2"><a href="#argtable2" class="headerlink" title="argtable2"></a>argtable2</h3> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">wget http://prdownloads.sourceforge.net/argtable/argtable2-13.tar.gz</div><div class="line">tar -xzvf argtable2-13.tar.gz</div><div class="line"><span class="built_in">cd</span> argtable2-13</div><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div></pre></td></tr></table></figure>
 <h3 id="jsoncpp"><a href="#jsoncpp" class="headerlink" title="jsoncpp"></a>jsoncpp</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/open-source-parsers/jsoncpp.git</div><div class="line"><span class="built_in">cd</span> jsoncpp </div><div class="line">mkdir build </div><div class="line"><span class="built_in">cd</span> build</div><div class="line">cmake -DCMAKE_CXX_FLAGS=<span class="string">"-fPIC"</span> ..</div><div class="line">gmake</div><div class="line">gmake install</div></pre></td></tr></table></figure>
@@ -455,8 +455,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/06/24/Centos-安装配置过程记录/"
-           data-title="Centos 安装配置过程记录" data-url="http://playgood111.com/2017/06/24/Centos-安装配置过程记录/">
+      <div class="ds-thread" data-thread-key="2017/06/25/Centos-安装配置过程记录/"
+           data-title="Centos 安装配置过程记录" data-url="http://playgood111.com/2017/06/25/Centos-安装配置过程记录/">
       </div>
     
   </div>
